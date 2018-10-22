@@ -14,6 +14,8 @@ namespace testHelloWorld
             SubFunction();
             Console.WriteLine("--- M U L T I P L I C A T I O N ---");
             MultFunction();
+            Console.WriteLine("--- D I V I S I O N ---");
+            DivFunction();
         }
 
         static void AddFunction()
@@ -41,6 +43,15 @@ namespace testHelloWorld
             Console.Write("Enter second number you wanne mult: ");
             Int32 sum2 = Int32.Parse(Console.ReadLine());
             Console.WriteLine(sum1 + " * " + sum2 + " = " + (sum1 * sum2));
+        }
+
+        static void DivFunction()
+        {
+            Console.Write("Enter first number you wanne div: ");
+            Int32 sum1 = Int32.Parse(Console.ReadLine());
+            Console.Write("Enter second number you wanne div: ");
+            Int32 sum2 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine(sum1 + " / " + sum2 + " = " + (sum1 / sum2));
         }
     } 
 }
