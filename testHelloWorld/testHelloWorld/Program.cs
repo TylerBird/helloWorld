@@ -12,6 +12,8 @@ namespace testHelloWorld
             AddFunction();
             Console.WriteLine("--- S U B T R A C T I N G ---");
             SubFunction();
+            Console.WriteLine("--- M U L T I P L I C A T I O N ---");
+            MultFunction();
         }
 
         static void AddFunction()
@@ -20,7 +22,7 @@ namespace testHelloWorld
             UInt32 sum1 = UInt32.Parse(Console.ReadLine());
             Console.Write("Enter second number you wanne sum: ");
             UInt32 sum2 = UInt32.Parse(Console.ReadLine());
-            Console.WriteLine(sum1 + " + " + sum2 + " = " + (sum1+sum2));
+            Console.WriteLine(sum1 + " + " + sum2 + " = " + (sum1 + sum2));
         }
 
         static void SubFunction()
@@ -31,5 +33,14 @@ namespace testHelloWorld
             Int32 sum2 = Int32.Parse(Console.ReadLine());
             Console.WriteLine(sum1 + " - " + sum2 + " = " + (sum1 - sum2));
         }
-    }
+
+        static void MultFunction()
+        {
+            Console.Write("Enter first number you wanne mult: ");
+            Int32 sum1 = Int32.Parse(Console.ReadLine());
+            Console.Write("Enter second number you wanne mult: ");
+            Int32 sum2 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine(sum1 + " * " + sum2 + " = " + (sum1 * sum2));
+        }
+    } 
 }
